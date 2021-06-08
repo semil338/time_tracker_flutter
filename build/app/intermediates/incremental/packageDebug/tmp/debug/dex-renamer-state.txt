@@ -1,4 +1,4 @@
-#Mon Jun 07 21:41:26 IST 2021
+#Tue Jun 08 21:01:29 IST 2021
 base.0=/home/semil/Desktop/Projects/time_tracker_flutter_course/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
