@@ -39,9 +39,9 @@
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.0",
+      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "fake_async",
@@ -92,6 +92,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_login_facebook",
+      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_login_facebook-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///home/semil/Documents/sdks/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -100,6 +106,24 @@
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///home/semil/Documents/sdks/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_sign_in",
+      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-5.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_sign_in_platform_interface",
+      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_sign_in_web",
+      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -118,6 +142,12 @@
     {
       "name": "js",
       "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "list_ext",
+      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/list_ext-1.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -142,6 +172,12 @@
     {
       "name": "plugin_platform_interface",
       "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///home/semil/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -206,7 +242,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-06-08T11:19:19.931419Z",
+  "generated": "2021-06-09T15:06:28.749939Z",
   "generator": "pub",
   "generatorVersion": "2.14.0-136.0.dev"
 }
