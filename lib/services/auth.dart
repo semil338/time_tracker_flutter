@@ -9,6 +9,8 @@ abstract class AuthBase {
   Future<void> signOut();
   Future<User> signInWithGoogle();
   Future<User> signInWithFacebook();
+  Future<User> signInWithEmailAndPassword(String email, String password);
+  Future<User> createAccountWithEmailAndPassword(String email, String password);
 }
 
 class Auth implements AuthBase {
@@ -23,6 +25,23 @@ class Auth implements AuthBase {
   @override
   Future<User> signInAnonymously() async {
     final userCredential = await _firebaseAuth.signInAnonymously();
+
+    return userCredential.user;
+  }
+
+  @override
+  Future<User> signInWithEmailAndPassword(String email, String password) async {
+    final userCredential = await _firebaseAuth.signInWithCredential(
+        EmailAuthProvider.credential(email: email, password: password));
+
+    return userCredential.user;
+  }
+
+  @override
+  Future<User> createAccountWithEmailAndPassword(
+      String email, String password) async {
+    final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
+        email: email, password: password);
 
     return userCredential.user;
   }
@@ -49,7 +68,7 @@ class Auth implements AuthBase {
       }
     } else {
       throw FirebaseAuthException(
-        code: "Error_Aborted_By_User",
+        code: "ERROR_ABORTED_BY_USER",
         message: "Sign_In_Aborted_By_User",
       );
     }
@@ -72,7 +91,7 @@ class Auth implements AuthBase {
         break;
       case FacebookLoginStatus.cancel:
         throw FirebaseAuthException(
-          code: "Error_Aborted_By_User",
+          code: "ERROR_ABORTED_BY_USER",
           message: "Sign_In_Aborted_By_User",
         );
         break;
