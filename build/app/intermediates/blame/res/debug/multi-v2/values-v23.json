@@ -4,7 +4,7 @@
             "outputFile": "/home/semil/Desktop/Projects/time_tracker_flutter_course/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/semil/.gradle/caches/transforms-2/files-2.1/ef10b67a623dd4458d0793a7bfd9e05e/appcompat-1.1.0/res/values-v23/values-v23.xml",
+                    "source": "/home/semil/.gradle/caches/transforms-2/files-2.1/628c32a0503178ee6225940771ade09d/appcompat-1.1.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/home/semil/.gradle/caches/transforms-2/files-2.1/5b2bb6a9a64ca473b01c6fd574e285cd/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/home/semil/.gradle/caches/transforms-2/files-2.1/b555e7f3813fe52628599534a6b82e0b/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

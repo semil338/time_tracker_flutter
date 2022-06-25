@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:meta/meta.dart';
+import 'package:rxdart/rxdart.dart';
 import 'package:time_tracker_flutter_course/app/sign_in/email_sign_in_model.dart';
 import 'package:time_tracker_flutter_course/services/auth.dart';
 
@@ -8,9 +9,11 @@ class EmailSignInBloc {
   EmailSignInBloc({@required this.auth});
   final AuthBase auth;
 
+  final _modelSubject =
+      BehaviorSubject<EmailSignInModel>.seeded(EmailSignInModel());
   final StreamController<EmailSignInModel> _modelController =
       StreamController<EmailSignInModel>();
-  Stream<EmailSignInModel> get modelStream => _modelController.stream;
+  Stream<EmailSignInModel> get modelStream => _modelSubject.stream;
   EmailSignInModel _model = EmailSignInModel();
 
   Future<void> submit() async {
@@ -65,6 +68,6 @@ class EmailSignInBloc {
   }
 
   void dispose() {
-    _modelController.close();
+    _modelSubject.close();
   }
 }

@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:time_tracker_flutter_course/app/sign_in/email_sign_in_change_model.dart';
 import 'package:time_tracker_flutter_course/common_widgets/form_submit_button.dart';
@@ -51,14 +50,7 @@ class _EmailSignInFormChangeNotifierState
     try {
       await model.submit();
       Navigator.of(context).pop();
-    }
-    // on PlatformException catch (e) {
-    //   PlatformExceptionAlertDialog(
-    //     title: 'Sign in failed',
-    //     exception: e,
-    //   ).show(context);
-    // }
-    on FirebaseAuthException catch (e) {
+    } on FirebaseAuthException catch (e) {
       showExceptionAlertDialog(
         context,
         title: "Sign in failed",
@@ -134,6 +126,7 @@ class _EmailSignInFormChangeNotifierState
 
   @override
   Widget build(BuildContext context) {
+    print("In Build");
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
